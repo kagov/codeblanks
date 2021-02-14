@@ -2,7 +2,7 @@
 
 The client side angular repo for codeblanks application
 
-This project uses Tailwind CSS for styling and scss are post processor. The purge for tailwind is enabled by default
+This project uses Tailwind CSS for styling and scss for post processor. The purge for tailwind is enabled by default
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 
