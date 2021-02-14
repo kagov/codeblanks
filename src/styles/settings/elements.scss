@@ -1,0 +1,34 @@
+* {
+  color: theme('colors.blue.900');
+  &:focus {
+    outline: 0 !important;
+  }
+}
+.btn {
+  @include shadowOnFocus();
+  @apply px-4;
+  @apply py-2;
+  @apply rounded;
+  @apply text-white;
+  @apply transition;
+  @apply ease-in-out;
+  @apply duration-200;
+  &:disabled {
+    opacity: .5;
+  }
+  &:hover:enabled {
+    @apply shadow-xl
+  }
+  &.flat {
+    color: theme('colors.blue.900');
+    &:hover {
+      @apply bg-gray-300;
+    }
+  }
+  &.gradient {
+    @apply bg-gradient-r-primary-gradient;
+  }
+  &.striped {
+    @apply bg-gradient-n45-primary-striped-sm;
+  }
+}

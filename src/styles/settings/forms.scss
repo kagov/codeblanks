@@ -1,0 +1,35 @@
+label {
+  @apply block;
+  @apply text-sm;
+  @apply font-bold;
+  @apply mb-2;
+}
+.input-wrapper {
+  @apply appearance-none;
+  @apply bg-gray-100;
+  @apply rounded;
+  @apply py-2;
+  @apply px-3;
+  input {
+    color: theme('colors.gray.900');
+    @apply w-full;
+    @apply bg-gray-100;
+  }
+}
+.error {
+  @apply mt-1;
+  color: theme('colors.primary');
+  @apply opacity-0;
+  @apply transition;
+  @apply ease-linear;
+  @apply duration-300;
+  @apply text-xs;
+  @apply italic;
+  @apply absolute;
+  &.active {
+    @apply opacity-100;
+  }
+}
+.success {
+  @apply text-green-500;
+}

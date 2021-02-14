@@ -1,0 +1,15 @@
+<div class="auth-container">
+  <h1 class="text-3xl mb-4 break-all">Profile - {{ user.username }}</h1>
+  <app-account-info [user]="user"></app-account-info>
+  <hr class="mb-4">
+  <app-change-password></app-change-password>
+  <hr class="mb-4">
+  <h2 class="text-2xl mb-4 text-primary">Danger Zone</h2>
+  <p class="mb-4">Be advised that by deleting your account, your account will not recoverable.</p>
+  <button class="btn gradient w-full mb-6" (click)="wantsToDeleteAccnt = true" [disabled]="wantsToDeleteAccnt">
+    Delete Account
+  </button>
+  <button *ngIf="wantsToDeleteAccnt" class="btn striped w-full mb-6" (click)="deleteAccount($event)">
+    Confirm Delete Account
+  </button>
+</div>

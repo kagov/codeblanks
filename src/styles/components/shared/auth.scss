@@ -1,0 +1,22 @@
+// Container used for the login, create account, forgot password, and profile pages.
+.auth-container {
+  @apply w-11/12;
+  @apply mx-auto;
+  @apply py-8;
+  @apply flex;
+  @apply flex-col;
+  @screen sm {
+    @apply w-11/12;
+    @apply shadow-md;
+    @apply rounded;
+  }
+  @screen md {
+    @apply my-12;
+    @apply px-8;
+    @apply py-10;
+    @apply w-1/2;
+  }
+  @screen xl {
+    @apply max-w-md;
+  }
+}
