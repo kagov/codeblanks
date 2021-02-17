@@ -5,16 +5,20 @@ import { SharedModule } from '../shared/shared.module';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LoginComponent } from './login/login.component';
+import { CodemirrorModule } from '@ctrl/ngx-codemirror';
+import { EditorComponent } from './editor/editor.component';
 
 @NgModule({
   declarations: [
     CreateAccountComponent,
     ForgotPasswordComponent,
-    LoginComponent
+    LoginComponent,
+    EditorComponent
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    CodemirrorModule
   ],
   exports: [
     FormsModule,
