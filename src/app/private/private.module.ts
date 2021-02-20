@@ -9,6 +9,7 @@ import { PrivateComponent } from './private.component';
 import { AccountInfoComponent } from './profile/account-info/account-info.component';
 import { ChangePasswordComponent } from './profile/change-password/change-password.component';
 import { ProfileComponent } from './profile/profile.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProfileComponent } from './profile/profile.component';
     HeaderComponent,
     MenuComponent,
     PrivateComponent,
-    ProfileComponent
+    ProfileComponent,
+    LandingPageComponent
   ],
   imports: [
     CommonModule,
