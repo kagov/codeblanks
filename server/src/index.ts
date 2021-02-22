@@ -31,7 +31,6 @@ async function handleErrors(
   ) {
     try {
       if (context.response.status === 404) {
-
         context.response.body = { 
           message : 'route not found'
          };  
