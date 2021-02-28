@@ -41,7 +41,7 @@ auth.get('/api/auth/callback', async (ctx: RouterContext) => {
   else {
     const token = data.access_token;
     cookies.set('Token', token);
-    response.redirect("/api/signup");
+    response.redirect("http://localhost:4200/editor");
   }
 });
 

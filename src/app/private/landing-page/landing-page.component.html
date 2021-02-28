@@ -20,12 +20,11 @@
           </svg>
         </button>
       </div>
-      <div class="hidden lg:block">
-        <ul class="inline-flex">
+      <div [ngClass] = "this.status ? 'block' : 'hidden'" class="block lg:block ">
+        <ul class="lg:flex lg:flex-row   items-center justify-between">
           <li>
-            <a class="px-4 font-bold" href="/">Signup</a>
+            <a class="px-4 font-bold block cursor-pointer" href="/api/signup">Signup using Github</a>
           </li>
-          
         </ul>
       </div>
     </div>

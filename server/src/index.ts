@@ -20,7 +20,7 @@ router
 
 const app = new Application();
 
-app.use(staticFileMiddleware)
+app.use(staticFileMiddleware);
 
 app.use(router.routes());
 app.use(auth.routes());
